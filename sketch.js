@@ -8,7 +8,7 @@ function setup(){
 }
 
 function draw(){
-    background(0);
+    background(204,102,255);
 
     //Translation and rotation 
     translate(200,200)
@@ -27,7 +27,7 @@ function draw(){
     //drawing seconds hand
     push();
     rotate(scAngle); //rotate the hand based on angle calculated
-    stroke(255,0,0);
+    stroke (0,0,255);
     strokeWeight(7);
     line(0,0,100,0);
     pop()
@@ -43,7 +43,7 @@ function draw(){
     //drawing hr hand
     push();
     rotate(hrAngle);
-    stroke(0,0,255);
+    stroke(255,0,0);
     strokeWeight(7);
     line(0,0,50,0);
     pop()
@@ -55,12 +55,12 @@ function draw(){
     strokeWeight(10);
     noFill();
     //Seconds
-    stroke(255,0,0);
+    stroke(0,0,255);
     arc(0,0,300,300,0,scAngle);
     //Minutes
     stroke(0,255,0);
     arc(0,0,280,280,0,mnAngle);
     //Hour
-    stroke(0,0,255);
+    stroke(255,0,0);
     arc(0,0,260,260,0,hrAngle);
 }
